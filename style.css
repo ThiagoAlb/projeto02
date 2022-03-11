@@ -5,7 +5,7 @@
     --cor1: #F3C300;
     --cor2: #00AC9F;
     --cor3: #2E6DB4;
-    --cor4: #0070D1;
+    --cor4: #0070d165;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
 
@@ -17,13 +17,125 @@
 }
 
 body {
-    background-color: white;
+    background-color: gray;
+    font-family: var(--fonte-padrao);
 }
 
 header {
     min-height: 250px;
-    background-color: var(--cor4);
+    background-color: var(--cor3);
+}
+
+nav {
+    background-color:black;
+    padding: 14px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.205);
+}
+
+nav > a {
+    color:black;
+    padding: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+
+nav > a:hover {
+    background-color: rgba(255, 255, 255, 0.644);
+}
+
+nav a#home {
+    color: white;
+}
+
+nav a#consoles {
+    color: var(--cor0);
+}
+
+nav a#jogos {
+    color: var(--cor1);
+}
+
+nav a#servicos {
+    color: var(--cor2);
+}
+
+nav a#controles {
+    color: var(--cor3);
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.247);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+main h1 {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+main h2 {
 
 }
 
+article {
+    
+}
+
+aside {
+    background-color: var(--cor3);
+    color: white;
+    padding: 15px;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.253);
+}
+
+aside > h3 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: -15px -15px 0px -15px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    padding: 10px;
+}
+
+aside > ul > li {
+    padding: 10px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--cor3) 
+}
 
