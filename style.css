@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #DF0024;
+    --cor1: #F3C300;
+    --cor2: #00AC9F;
+    --cor3: #2E6DB4;
+    --cor4: #0070D1;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    min-height: 250px;
+    background-color: var(--cor4);
+
+}
+
+
