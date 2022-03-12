@@ -43,6 +43,7 @@ nav > a {
 
 nav > a:hover {
     background-color: rgba(255, 255, 255, 0.644);
+    padding: 10px;
 }
 
 nav a#home {
@@ -68,11 +69,10 @@ nav a#controles {
 main {
     background-color: white;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding: 20px;
     max-width: 1000px;
     min-width: 300px;
-    margin: auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.247);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -81,10 +81,21 @@ main {
 main h1 {
     font-weight: bold;
     font-size: 2em;
+    padding: 20px;
 }
 
 main h2 {
+    font-size: 1.5em;
+    padding: 20px;
+}
 
+main h3 {
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+main p {
+    padding: 10px;
 }
 
 article {
