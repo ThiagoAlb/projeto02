@@ -1,14 +1,22 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Playstation';
+    src: url('fontes/PlayGreatBold-8MgEZ.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --cor0: #DF0024;
     --cor1: #F3C300;
     --cor2: #00AC9F;
     --cor3: #2E6DB4;
     --cor4: #0070d165;
+    --cor5: #0552A4;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
-
+    --font-playstation: 'Playstation';
 }
 
 * {
@@ -17,13 +25,32 @@
 }
 
 body {
-    background-color: gray;
+    background-image: url('imagens/papelDeParedeBotoes-pq.jpg');
     font-family: var(--fonte-padrao);
 }
 
 header {
+    background-image: linear-gradient(to bottom, #00DAF9, #002E8A);
+    padding-top: 100px;
     min-height: 250px;
-    background-color: var(--cor3);
+    text-align: center;
+}
+
+header > h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 5px 8px 10px white;
+}
+
+header > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    max-width: 600px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.274);
+    color: white;
 }
 
 nav {
@@ -66,6 +93,12 @@ nav a#controles {
     color: var(--cor3);
 }
 
+main img {
+    width: 50%;
+    margin:auto;
+    display: block;
+}
+
 main {
     background-color: white;
     margin: auto;
@@ -86,7 +119,7 @@ main h1 {
 
 main h2 {
     font-size: 1.5em;
-    padding: 20px;
+    padding: 12px;
 }
 
 main h3 {
@@ -96,9 +129,45 @@ main h3 {
 
 main p {
     padding: 10px;
+    text-indent: 18px;
+    margin: 10px;
+    text-align: justify;
 }
 
-article {
+#linkconsole {
+    color: var(--cor0);
+    background-color: black;
+    border-radius: 0px 30px 30px 0px;
+    text-align: center;
+}
+
+#linkjogos {
+    color: var(--cor1);
+    background-color: black;
+    border-radius: 0px 30px 30px 0px;
+    text-align: center;
+}
+
+#linkservicos {
+    color: var(--cor2);
+    background-color: black;
+    border-radius: 0px 30px 30px 0px;
+    text-align: center;
+}
+
+#linkcontroles {
+    color: var(--cor3);
+    background-color: black;
+    border-radius: 0px 30px 30px 0px;
+    text-align: center;
+}
+
+article > h3 {
+    margin-left: 10px;
+}
+
+article > h4 {
+    margin-left: 30px;
     
 }
 
