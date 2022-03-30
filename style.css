@@ -24,7 +24,7 @@
     padding: 0px;
 }
 
-@media only screen and (max-width: 610px) {
+@media screen and (max-width: 610px) {
 
     nav > a {
         margin: 0px 15px 0px 15px;
